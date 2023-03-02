@@ -1,0 +1,9 @@
+<launch>
+    <!-- Node -->
+    <node name="segmentationTO3d" pkg="seg3d" type="Seg_to3DKitti.py" output="screen" respawn="true" />
+   
+        
+
+</launch>
+
+
