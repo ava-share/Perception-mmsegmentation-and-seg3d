@@ -1,0 +1,14 @@
+<launch>
+    <!-- Node -->
+    <node name="mmsegmentation_ros" pkg="mmsegmentor" type="mmsegmentor.py" output="screen" />
+    <include file="path of second launch file should be added" />
+    <include file="path of third launch file should be added"  />
+
+
+    <node name="yoloLiveNode" pkg="objdetection" type="objDetectionLive.py" output="screen" respawn="true" />
+
+    <node name="mmsegmentation_ros" pkg="mmsegmentor" type="mmsegmentor.py" output="screen" />
+
+    <node name="laneattNode" pkg="linedetection" type="main.py" output="screen" />
+
+</launch>
